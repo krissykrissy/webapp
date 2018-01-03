@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container w3-green">
+<p style="font-size:36px;text-align:center;color:White;"><b>CVS  Merging Tool</b></p>
+</div>
+
+
+<body style="background-color:LightGray;">
+
+<form action="/action_page.php"> 1. Select the folder where your files are located:<br>
+<input type="file" id="files" name="files[]" multiple />
+<output id="base_dir"></output>
+<br><br>
+
+<form action="/action_page.php"> 2. File name (e.g. _NREM_):<br>
+<form action="/action_page.php">
+  <input list="nametags" name="nametag"> <output id="key"></output>
+  <datalist id="nametags">
+    <option value="_sleep_">
+    <option value="_wake_">
+    <option value="_NREM_">
+    <option value="_REM_">
+  </datalist>
+ <button type="button" onclick="alert('File names are to differentiate from other files in the same folder')">?</button>
+</form>
+
+
+<br>3. Rows of headers<br>
+<input type="number" name="num_of_row" value=2 min=0 max=5> <output id="rows_of_header"></output>
+<br><br>
+
+<input type="submit">
+</form>
+
+
+</body>
+</html>
