@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8" />
+  <script src="application.js"></script>
+
   <title></title>
 </head>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body>
 
+<!-- set the background color green -->
 <div class="w3-container w3-green">
-<p style="font-size:36px;text-align:center;color:White;"><b>CVS  Merging Tool</b></p>
+<p style="font-size:36px;text-align:center;color:White;"><b>CSV  Merging Tool</b></p>
 </div>
 
-
+<!-- set the background color grey -->
 <body style="background-color:LightGray;">
+<!-- first description of selection -->
+<form action="/action_page.php"> 1. Select a folder:<br>
+<!-- the selection box -->
 
-<form action="/action_page.php"> 1. Select the folder where your files are located:<br>
-<input type="file" id="files" name="files[]" multiple />
+<!-- <input type="file" onchange="selectFolder(event);" webkitdirectory mozdirectory msdirectory odirectory directory multiple="multiple" /> -->
+<input type="file" id="filepicker" name="fileList" webkitdirectory multiple />
+<ul id="listing"></ul>
 <output id="base_dir"></output>
-<br><br>
 
-<form action="/action_page.php"> 2. File name (e.g. _NREM_):<br>
+
+<form action="/action_page.php"> 2. Enter the file name (e.g. _NREM_):<br>
 <form action="/action_page.php">
-  <input list="nametags" name="nametag"> <output id="key"></output>
-  <datalist id="nametags">
+  <input placeholder="Click for options ..." size=25 list="nametags" name="nametag" id="tags">
+  <datalist id="nametags" placeholder = "Click">
     <option value="_sleep_">
     <option value="_wake_">
     <option value="_NREM_">
@@ -31,12 +39,36 @@
 </form>
 
 
-<br>3. Rows of headers<br>
-<input type="number" name="num_of_row" value=2 min=0 max=5> <output id="rows_of_header"></output>
+<br>3. Rows to skip <meta charset="utf-8">
+
+<script type="text/ruby">
+   puts "hi"
+ </script><br>
+<input type="number" name="num_of_row" value=2 min=0 max=5 > <output id="rows_of_header"></output>
+
 <br><br>
 
-<input type="submit">
-</form>
+<button onclick="display()"> Start to merge </button>
+
+<meta charset="utf-8" />
+<script type="text/ruby" id="display">
+    def display()
+      return "rrr"
+    end
+ </script>
+
+
+<script>
+function changetext() {
+    // var inp=document.getElementById('content');
+    document.getElementById('content').value='Loading...';
+}
+</script>
+
+<button type="button"
+onclick="changetext()">
+Click me to display Date and Time.</button>
+<div id="content" name="content"> what</div>
 
 
 </body>

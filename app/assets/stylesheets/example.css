@@ -1,0 +1,44 @@
+#resetbutton {
+
+    position:absolute;
+    top: 60%;
+    left: 50%;
+    width: 150px;
+    /*text-align: center;*/
+    cursor: pointer;
+}
+
+
+
+#searchbutton {
+    position:absolute;
+    top: 70%;
+    left: 50%;
+    width: 150px;
+    /*text-align: center;*/
+    cursor: pointer;
+}
+
+#tascilink {
+
+    position:absolute;
+    top: 30%;
+    left: 40%;
+    width: 500px;
+    height:50px;
+    /*text-align: center;*/
+    cursor: pointer;
+
+
+}
+
+#csvmergelink {
+
+    position:absolute;
+    top: 50%;
+    left: 40%;
+    width: 500px;
+    height:50px;
+  /*text-align: center;*/
+
+}

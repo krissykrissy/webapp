@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Path to folder:</strong>
+  <%= @mergecase.path_to_folder %>
+</p>
+
+<p>
+  <strong>File tag:</strong>
+  <%= @mergecase.file_tag %>
+</p>
+
+<p>
+  <strong>Rows:</strong>
+  <%= @mergecase.rows %>
+</p>
+
+<p>
+  <strong>Timelog:</strong>
+  <%= @mergecase.timelog %>
+</p>
+
+<p>
+  <strong>Default:</strong>
+  <%= @mergecase.default %>
+</p>
+
+<%= link_to 'Edit', edit_mergecase_path(@mergecase) %> |
+<%= link_to 'Back', mergecases_path %>

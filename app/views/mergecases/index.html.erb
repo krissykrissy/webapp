@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Mergecases</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Path to folder</th>
+      <th>File tag</th>
+      <th>Rows</th>
+      <th>Timelog</th>
+      <th>Default</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mergecases.each do |mergecase| %>
+      <tr>
+        <td><%= mergecase.path_to_folder %></td>
+        <td><%= mergecase.file_tag %></td>
+        <td><%= mergecase.rows %></td>
+        <td><%= mergecase.timelog %></td>
+        <td><%= mergecase.default %></td>
+        <td><%= link_to 'Show', mergecase %></td>
+        <td><%= link_to 'Edit', edit_mergecase_path(mergecase) %></td>
+        <td><%= link_to 'Destroy', mergecase, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mergecase', new_mergecase_path %>

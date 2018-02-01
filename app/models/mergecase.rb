@@ -1,0 +1,2 @@
+class Mergecase < ApplicationRecord
+end

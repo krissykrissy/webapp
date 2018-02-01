@@ -1,0 +1,42 @@
+<%= form_with(model: mergecase, local: true) do |form| %>
+  <% if mergecase.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(mergecase.errors.count, "error") %> prohibited this mergecase from being saved:</h2>
+
+      <ul>
+      <% mergecase.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :path_to_folder %>
+    <%= form.text_field :path_to_folder, id: :mergecase_path_to_folder %>
+  </div>
+
+  <div class="field">
+    <%= form.label :file_tag %>
+    <%= form.text_field :file_tag, id: :mergecase_file_tag %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rows %>
+    <%= form.number_field :rows, id: :mergecase_rows %>
+  </div>
+
+  <div class="field">
+    <%= form.label :timelog %>
+    <%= form.datetime_select :timelog, id: :mergecase_timelog %>
+  </div>
+
+  <div class="field">
+    <%= form.label :default %>
+    <%= form.check_box :default, id: :mergecase_default %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
