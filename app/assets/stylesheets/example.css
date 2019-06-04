@@ -26,6 +26,9 @@
     left: 40%;
     width: 500px;
     height:50px;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
     /*text-align: center;*/
     cursor: pointer;
 

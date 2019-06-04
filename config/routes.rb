@@ -21,6 +21,10 @@ Rails.application.routes.draw do
   get 'app/views/search/index.html.erb', to: 'search#index', as:'searchpage'
   get 'app/views/tools/toolspage.html.erb', to: 'tools#toolspage', as:'home'
   get 'app/views/csvmerge/mergepage.html.erb', to: 'csvmerge#mergepage', as:'merge'
+  get 'tasci_merger', to: 'tasci#tasci_merger', as: :tasci_merger
+  # post 'tasci_merger', to: 'tools#tasci_merger', as: :merge_tasci
   get 'app/views/search/searchresult.html.erb' => 'search#searchresult', as:'result'
+
+
 
 end
